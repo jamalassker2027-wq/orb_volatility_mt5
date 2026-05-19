@@ -19,7 +19,7 @@ RUN wget -q https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5se
     -O /root/mt5setup.exe
 
 # Copy EA files
-COPY ["ORB_Volatility_Bracket.mq5", "/root/ORB_Volatility_Bracket.mq5"]
+COPY ["volatility_breakout.mq5", "/root/volatility_breakout.mq5"]
 
 
 
@@ -59,7 +59,7 @@ fi
 
 mkdir -p "\$DATA_DIR/Experts"
 
-cp "/root/ORB_Volatility_Bracket.mq5" "\$DATA_DIR/Experts/"
+cp "/root/volatility_breakout.mq5" "\$DATA_DIR/Experts/"
 
 
 
