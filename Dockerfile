@@ -21,6 +21,7 @@ RUN wget -q https://download.mql5.com/cdn/web/metaquotes.software.corp/mt5/mt5se
 # Copy EA files
 COPY ["volatility_breakout.mq5", "/root/volatility_breakout.mq5"]
 COPY ["Tick_Reversion_Pro.mq5", "/root/Tick_Reversion_Pro.mq5"]
+COPY ["InstitutionalTickHybridEA.mq5", "/root/InstitutionalTickHybridEA.mq5"]
 
 
 
@@ -62,6 +63,7 @@ mkdir -p "\$DATA_DIR/Experts"
 
 cp "/root/volatility_breakout.mq5" "\$DATA_DIR/Experts/"
 cp "/root/Tick_Reversion_Pro.mq5" "\$DATA_DIR/Experts/"
+cp "/root/InstitutionalTickHybridEA.mq5" "\$DATA_DIR/Experts/"
 
 
 
